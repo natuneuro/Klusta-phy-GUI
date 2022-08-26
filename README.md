@@ -66,7 +66,7 @@ This software compile on Ubuntu 20.04
 
 ### Dependencies
 
-Install following dependences before install phy GUI
+Install the following dependencies before installing phy GUI
 
 ```
 sudo apt install python3-pip
