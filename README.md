@@ -28,7 +28,7 @@ chmod +x Miniconda3-latest-Linux-x86_64.sh
 ```
 ./Miniconda3-latest-Linux-x86_64.sh
 ```
-  - Deactivate the miniconda base environment 
+  - Deactivate the miniconda base environment **(optional)**
 ```
 conda config --set auto_activate_base false
 ```
@@ -48,4 +48,42 @@ pip install klusta --upgrade
 conda activate klusta # activate the klusta environment
 klusta file_name.prm  # spikesort your data with a PRM file
 ```
-It is obtained a `.kwik` file that is open with **phy GUI**
+It is obtained a `.kwik` file that will be open with **phy GUI**
+
+# phy GUI
+
+phy is an open-source Python library providing a graphical user interface for visualization and manual curation of large-scale electrophysiological data. It is optimized for high-density multielectrode arrays containing hundreds to thousands of recording sites (mostly Neuropixels probes).
+
+This software compile on Ubuntu 20.04
+
+## Documentation
+
+- [phy documentation](https://phy.readthedocs.io/en/latest/)
+
+- [phy repository](https://github.com/cortex-lab/phy)
+
+## Install guide
+
+### Dependencies
+
+Install following dependences before install phy GUI
+
+```
+sudo apt install python3-pip
+python3-is-python
+```
+  1. Install phy GUI
+```
+pip install phy klusta phycontrib --pre --upgrade
+```
+  2. PATH confing. 
+  
+Open `/home` directory and press `Ctl + H` to view hidden files, open `.bashrc` file and add the next line at the end of the file:
+ ```
+ export PATH = "~/.local/bin:$PATH"
+ ```
+  3. Done! Now, to use phy GUI, enter the directory that contains your files and type: 
+```
+phy kwik-gui file_name.kwik
+```
+  
