@@ -58,6 +58,8 @@ This software compile on Ubuntu 20.04
 
 ## Documentation
 
+For more information about this software please read: 
+
 - [phy documentation](https://phy.readthedocs.io/en/latest/)
 
 - [phy repository](https://github.com/cortex-lab/phy)
