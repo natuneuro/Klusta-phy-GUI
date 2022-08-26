@@ -76,7 +76,7 @@ python3-is-python
 ```
 pip install phy klusta phycontrib --pre --upgrade
 ```
-  2. PATH confing. 
+  2. PATH confinguration
   
 Open `/home` directory and press `Ctl + H` to view hidden files, open `.bashrc` file and add the next line at the end of the file:
  ```
