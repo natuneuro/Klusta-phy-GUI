@@ -82,7 +82,7 @@ pip install phy klusta phycontrib --pre --upgrade
   
 Open `/home` directory and press `Ctl + H` to view hidden files, open `.bashrc` file and add the next line at the end of the file:
  ```
- export PATH = "~/.local/bin:$PATH"
+ export PATH="~/.local/bin:$PATH"
  ```
   3. Done! Now, to use phy GUI, enter the directory that contains your files and type: 
 ```
